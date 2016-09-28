@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.102-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane onMouseClicked="#set" prefHeight="277.0" prefWidth="360.0" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="btMessage" layoutX="58.0" layoutY="43.0" mnemonicParsing="false" onAction="#setVisibilidad" text="Visibilidad" />
+            <Label fx:id="lblHW" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="69.0" prefHeight="63.0" prefWidth="129.0" text="!(.)(.)!" />
+            <ProgressBar fx:id="prgs" layoutX="297.0" layoutY="4.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="20.0" prefWidth="49.0" progress="0.0" />
+            <ProgressIndicator fx:id="prgs2" layoutX="232.0" layoutY="101.0" progress="0.0" />
+            <Button fx:id="bt" mnemonicParsing="false" onAction="#set2" text="Button" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
